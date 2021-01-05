@@ -1,0 +1,53 @@
+language: cpp
+
+env:
+  global:
+    # Ubuntu version
+    - LINUX_DIST=trusty
+    - DEPS_DIR=${TRAVIS_BUILD_DIR}/deps
+    # Global build options and C++ flags
+    - CXX_FLAGS="-Wall -pedantic -Werror -Wno-variadic-macros -Wno-long-long -Wno-shadow"
+    # Misc
+    - RUN_TESTS=true
+    - COVERAGE=false
+
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      sudo: true
+      compiler: gcc
+      addons:
+        apt:
+          packages: &precise_latest_boost_packages
+            - build-essential
+            - libsdl-ttf2.0-dev
+            - libsdl2-image
+            - libsdl2-dev
+          sources: &precise_latest_boost_sources
+            - ubuntu-toolchain-r-test
+            - llvm-toolchain-precise-3.7
+
+before_install:
+  # Combine global build options with OS/compiler-dependent options
+#  - export CMAKE_OPTIONS=${CMAKE_OPTIONS}" "${ENV_CMAKE_OPTIONS}
+#  - export CXX_FLAGS=${CXX_FLAGS}" "${ENV_CXX_FLAGS}
+
+install:
+  - if [ "$CXX" = "clang++" ] && [ "$TRAVIS_OS_NAME" = "linux" ]; then export CXX="clang++-3.7" CC="clang-3.7"; fi
+  - echo ${PATH}
+  - echo ${CXX}
+  - ${CXX} --version
+  - ${CXX} -v
+#  - sudo pip install codecov
+
+
+script:
+  ############################################################################
+  # Build main and tests
+  ############################################################################
+  - mkdir -p build
+  - cd build
+  - cmake ..
+  - make
+  - ./TestDeepCars
