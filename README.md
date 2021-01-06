@@ -18,8 +18,7 @@ Até o momento:
 - Precisa ser feito: 
 
 - criar testes de unidade para cada Classe (:sob:)
-
-- habilitar o continuos integration  
+ 
 
 ## dependências
 
