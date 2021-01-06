@@ -25,6 +25,7 @@ matrix:
             - libsdl2-image-dev
             - libsdl2-dev
             - libgtest-dev
+            - libgsl-dev
           sources: &precise_latest_boost_sources
             - ubuntu-toolchain-r-test
             - llvm-toolchain-precise-3.7
