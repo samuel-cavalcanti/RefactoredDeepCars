@@ -2,7 +2,7 @@
 
 Tentando limpar o código de Deep Cars do universo programado  
 [AI learning to DRIVE!!](https://www.youtube.com/watch?v=gnfkfUQvKDw&ab_channel=UniversoProgramado)
-
+[![Build Status](https://travis-ci.org/samuel-cavalcanti/RefactoredDeepCars.svg?branch=main)](https://travis-ci.org/samuel-cavalcanti/RefactoredDeepCars)
 
 ![](preview.gif)
 
