@@ -24,7 +24,7 @@ matrix:
             - libsdl2-ttf-dev
             - libsdl2-image-dev
             - libsdl2-dev
-            - libgtest-dev
+            - googletest
             - libgsl-dev
           sources: &precise_latest_boost_sources
             - ubuntu-toolchain-r-test
