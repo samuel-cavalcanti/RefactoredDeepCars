@@ -24,6 +24,7 @@ matrix:
             - libsdl2-ttf-dev
             - libsdl2-image-dev
             - libsdl2-dev
+            - libgtest-dev
           sources: &precise_latest_boost_sources
             - ubuntu-toolchain-r-test
             - llvm-toolchain-precise-3.7
@@ -51,3 +52,6 @@ script:
   - cmake ..
   - make
   - ./TestDeepCars
+
+notifications:
+  email: false
