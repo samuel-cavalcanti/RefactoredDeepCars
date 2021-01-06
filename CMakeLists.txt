@@ -14,9 +14,10 @@ file(GLOB_RECURSE PIG "PIG/*.cpp" "PIG/*.h" )
 
 file(GLOB_RECURSE UNITARY_TEST PIG/*.teste.cpp )
 
-MESSAGE(STATUS  unitary ${UNITARY_TEST})
+#MESSAGE(STATUS  unitary ${UNITARY_TEST})
 
-list(REMOVE_ITEM SOURCE_CODE ${UNITARY_TEST} )
+
+#list(REMOVE_ITEM SOURCE_CODE ${UNITARY_TEST} )
 
 list(REMOVE_ITEM PIG ${UNITARY_TEST} )
 
@@ -26,14 +27,14 @@ include_directories("codigoFonte/*")
 
 add_executable(DeepCars
         ${PIG}
-        ${SOURCE_CODE}
+ #       ${SOURCE_CODE}
         main.cpp)
 
 
 add_executable(TestDeepCars
         ${UNITARY_TEST}
         ${PIG}
-        ${SOURCE_CODE}
+  #      ${SOURCE_CODE}
         main.teste.cpp)
 
 

@@ -40,7 +40,7 @@ install:
   - sudo apt-get install cmake libgtest-dev
   - cd /usr/src/gtest
   - sudo cmake CMakeLists.txt
-  - sudo make
+  - sudo make -j4
   - sudo cp *.a /usr/lib
   - cd "$project_path"
 
@@ -54,7 +54,7 @@ script:
   - mkdir -p build
   - cd build
   - cmake ..
-  - make
+  - make -j4
   - ./TestDeepCars
 
 notifications:
