@@ -36,11 +36,13 @@ before_install:
 #  - export CXX_FLAGS=${CXX_FLAGS}" "${ENV_CXX_FLAGS}
 
 install:
+  - project_path="$PWD"
   - sudo apt-get install cmake libgtest-dev
   - cd /usr/src/gtest
   - sudo cmake CMakeLists.txt
   - sudo make
   - sudo cp *.a /usr/lib
+  - cd "$PWD"
 
 #  - sudo pip install codecov
 
