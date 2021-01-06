@@ -36,6 +36,11 @@ No meu caso utilizo Arch linux logo os comandos são:
 ```shell
 sudo pacman -Su sdl2 sdl2_image sdl2_ttf gsl gtest
 ```
+No Ubuntu Bionic (18.04 LTS)
+```shell
+sudo apt install libsdl2-ttf-dev libsdl2-image-dev
+libsdl2-dev libgtest-dev libgsl-dev
+```
 
 # executando o projeto
 Uma vez tendo as dependências instaladas você pode:
