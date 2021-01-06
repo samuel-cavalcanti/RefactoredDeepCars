@@ -42,7 +42,7 @@ install:
   - sudo cmake CMakeLists.txt
   - sudo make
   - sudo cp *.a /usr/lib
-  - cd "$PWD"
+  - cd "$project_path"
 
 #  - sudo pip install codecov
 
