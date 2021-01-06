@@ -22,7 +22,7 @@ matrix:
           packages: &precise_latest_boost_packages
             - build-essential
             - libsdl-ttf2.0-dev
-            - libsdl2-image
+            - libsdl2-image-dev
             - libsdl2-dev
           sources: &precise_latest_boost_sources
             - ubuntu-toolchain-r-test
