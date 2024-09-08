@@ -6,7 +6,7 @@
 #define PIG_CGERADORPARTICULAS_H
 
 
-#include <SDL_render.h>
+#include <SDL2/SDL_render.h>
 #include "../cParticula/CParticula.h"
 #include "../pigPack/Tipos_PIG.h"
 #include "../cObjeto/CObjeto.h"

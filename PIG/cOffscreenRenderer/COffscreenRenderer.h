@@ -6,7 +6,7 @@
 #define PIG_COFFSCREENRENDERER_H
 
 
-#include <SDL_render.h>
+#include <SDL2/SDL_render.h>
 #include "../cPilhaCoordenada/CPilhaCoordenada.h"
 #include "../pigPack/Tipos_PIG.h"
 

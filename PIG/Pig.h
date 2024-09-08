@@ -6,8 +6,11 @@
 #define PIG_PIG_H
 
 #include <string>
-#include "pigPack/PIG_Pack.h"
-#include "AlgebraLinear/AlgebraLinear.h"
+#include "pigPack/cGerenciadorAnimacoes/CGerenciadorAnimacoes.h"
+#include "pigPack/cGerenciadorObjetos/CGerenciadorObjetos.h"
+#include "pigPack/cGerenciadorParticulas/CGerenciadorParticulas.h"
+#include "pigPack/cGerenciadorTimers/CGerenciadorTimers.h"
+#include "pigPack/cJogo/CJogo.h"
 #include "vector"
 
 typedef struct Camera {
